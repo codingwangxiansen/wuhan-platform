@@ -1,0 +1,1002 @@
+/* 重定义vux自带样式 */
+.vux-header{
+  background-color: @headerColor !important;
+}
+
+.vux-header .vux-header-title{
+  line-height: 45px !important;
+  font-size: 16px !important;
+}
+
+.vux-tab-ink-bar{
+  background-color: @tabColor !important;
+}
+
+.vux-header .vux-header-left .left-arrow:before{
+  border-color: #fff !important;
+}
+
+.vux-header .vux-header-left a,.vux-header .vux-header-right a{
+  color: #fff !important;
+  font-size: 16px;
+}
+
+.vux-tab .vux-tab-item.vux-tab-selected{
+  color: @textColor !important;
+  border-bottom: 3px solid @tabColor !important;
+}
+
+/* 重写管理页面的tab高度 */
+.tabNav{
+  .vux-tab-wrap{
+    padding-top: 38px;
+    .vux-tab-container{
+      height: 38px !important;
+      .vux-tab{
+        height:38px !important;
+        .vux-tab-item{
+          line-height: 38px;
+        }
+      }
+    }
+  }
+  .vux-tab{
+    height:38px !important;
+    .vux-tab-item{
+      line-height: 38px;
+    }
+  }
+}
+/* popup遮罩层全透明  暂时在全�?修改 为了演示 后面改回�?  */
+.vux-popup-mask.vux-popup-show{
+  display: none;
+}
+
+/* 重写日历风格 */
+.inline-calendar td.current > span {
+  background-color: @themeColor !important;
+}
+
+.inline-calendar td.is-today, .inline-calendar td.is-today.is-disabled {
+  color: @themeColor !important;
+}
+
+.vux-prev-icon, .vux-next-icon {
+  border-color: @themeColor !important;
+}
+
+.weui_btn_primary{
+  background:@btn-primary-color !important;
+}
+//title统一
+.weui-cells__title {
+  position: relative;
+}
+
+.weui-cells{
+  font-size: @normalSize !important;
+}
+/*底部弹出窗头部文字颜�?*/
+.vux-popup-picker-header{
+  color: @themeColor !important;
+}
+
+/*confirm弹窗文字颜色*/
+.weui_btn_dialog.primary{
+  color: @themeColor !important;
+}
+//信息详情页面布局修改
+.eventAd {
+  .vux-cell-primary {
+    flex: none;
+  }
+  .weui-cell__ft {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+  .weui-cell__ft {
+    color: #000;
+  }
+}
+
+/* 不需要border做显示用的textarea */
+.no-border{
+  .weui-textarea{
+    border: none !important;
+    background: #ffffff;
+    padding: 0;
+  }
+}
+
+//弹窗底色统一修改
+.vux-popup-dialog {
+  background-color: #fff;
+  .weui-textarea {
+    background-color: #f7f7f7;
+  }
+  .weui-cell_access {
+    //border:1px solid #f7f7f7;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    position: relative;
+  }
+
+  .weui-cells:before {
+    border: none;
+  }
+}
+.fileInfo .weui-cells{
+  background-color: #ecedef;
+  margin-top: 0;
+  line-height: 1.5em;
+}
+.fileInfo .weui-cells__title {
+  line-height: 1.5em;
+}
+.fileLoad .weui-cells {
+  background-color: #ecedef;
+  margin-top: 0.5em;
+}
+.fileLoad .weui-cells__title {
+  line-height: 1.5em;
+  padding-left: 1.5em;
+  font-size: 1em;
+}
+//sendLeader
+.sendLead{
+  .weui-cell_access {
+    margin-top: 1em;
+    background: #fff;
+  }
+  .vux-x-switch.weui-cell_switch {
+    background-color: #fff;
+  }
+  .vux-cell-primary p > label {
+    width: 6.5em;
+  }
+
+}
+.ma-bottom .weui-cell::before {
+  content: " ";
+  position: absolute;
+  top: 0;
+  width: 92%;
+  height: 1px;
+  border-top: 1px solid #D9D9D9;
+  color: #D9D9D9;
+  -webkit-transform-origin: 0 0;
+  transform-origin: 0 0;
+  -webkit-transform: scaleY(0.5);
+  transform: scaleY(0.5);
+  left: 15px;
+}
+//点击展开头部箭头
+.fileLoad {
+  position: relative;
+  .weui-cells:nth-child(2) {
+    background: #fff;
+    overflow: initial;
+    > span{
+      display: inline-block;
+      width: 100%;
+      height: 1.5em;
+      position: absolute;
+      right: 0;
+      top: -30px;
+    }
+    .gs-caret-down:before, .gs-caret-up:before {
+      position: absolute;
+      top: -0.1em;
+      right: 0.5em;
+      z-index: 99;
+      font-size: 30px;
+      color: #ddd;
+    }
+    &:before , &:after {
+      border: none;
+    }
+
+  }
+}
+//放在底部的按�?
+.transBtn {
+  box-sizing: border-box;
+}
+//弹窗头部
+.headBtnL > .weui-cells , .headBtnR > .weui-cells {
+  margin-top: 0;
+}
+.vux-x-textarea > .weui-cell__bd:nth-child(2) {
+  margin: 0 0px 10px 0px;
+}
+//图片上传
+.weui_uploader_file {
+  margin: 10px;
+}
+.multItem {
+  .excelBox {
+    .vux-x-textarea {
+      .weui-label {
+        width: 5.5em !important;
+      }
+    }
+  }
+  .weui-panel {
+    margin-top: 0;
+  }
+}
+.leadSel {
+  .vux-label {
+    width: 5.5em !important;
+  }
+}
+//新增页面
+.add-round .thingType {
+  &:after {
+    right: 17px;
+  }
+}
+.thingType {
+  .vux-cell-primary {
+    flex:1;
+    position: relative;
+
+  }
+  &:after {
+    content: " ";
+    display: inline-block;
+    height: 6px;
+    width: 6px;
+    border-width: 2px 2px 0 0;
+    border-color: #C8C8CD;
+    border-style: solid;
+    -webkit-transform: matrix(0.71, 0.71, -0.71, 0.71, 0, 0);
+    transform: matrix(0.71, 0.71, -0.71, 0.71, 0, 0);
+    position: absolute;
+    top: 50%;
+    margin-top: -4px;
+    right: 75px;
+  }
+}
+.thingLevel {
+  &:after {
+    content: " ";
+    display: inline-block;
+    height: 6px;
+    width: 6px;
+    border-width: 2px 2px 0 0;
+    border-color: #C8C8CD;
+    border-style: solid;
+    -webkit-transform: matrix(0.71, 0.71, -0.71, 0.71, 0, 0);
+    transform: matrix(0.71, 0.71, -0.71, 0.71, 0, 0);
+    position: absolute;
+    top: 50%;
+    margin-top: -4px;
+    right: 16px;
+  }
+}
+.thingAddress ,.eventAd {
+  .weui-cell__ft {
+    font-family: 'gsafety' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    &:before {
+      content: "\e99e";
+    }
+  }
+}
+//信息分享页面
+.infoShell {
+  .weui-cells__title {
+    margin-top: 0.77em;
+    margin-bottom: 0.3em;
+    color: #999999;
+    font-size: 1em;
+    padding-left: 2em;
+  }
+}
+//送审领导弹窗
+.sendLeader {
+  .weui-cells:after {
+    border: none;
+  }
+}
+.popup0 {
+  .weui-cells{
+    margin-top: 0;
+  }
+  .weui-cells:after {
+    border:0;
+  }
+}
+//转办意见
+.transList {
+  //margin-bottom: 10px;
+  //box-shadow: 9px 9px 8px rgba(0,0,0,.4);
+  .weui-cells__title::after {
+    display: none;
+  }
+  .weui-cells__title {
+    background: #ddd;
+    line-height: 34px;
+    color: #000;
+    font-weight: 400;
+    font-size: 16px;
+  }
+}
+//注册页面
+.loginTop {
+  .weui-cells__title {
+    font-size: 1em;
+    padding-left: 2em;
+  }
+}
+.loginTel {
+  .weui-cells__title {
+    font-size: 1em;
+    padding-left: 2em;
+  }
+}
+//send
+.infoSend {
+  .weui-cells__title {
+    font-size: 1em;
+    padding-left: 2em;
+  }
+}
+//
+.swiperContainer {
+  .swiper-container {
+    width: 70%;
+    //height: 200px;
+  }
+  .showa {
+    height:100%;
+  }
+}
+.detail-img img{
+  width: 100%;
+  height: 100%;
+}
+.attach-img {
+  text-align: unset;
+  .swiperContainer {
+    text-align: left;
+  }
+  .swiperContainer .attach-img {
+    display: inline-block;
+    margin: 10px 0 10px 10px;
+  }
+}
+.dealOption {
+  & > .weui-cells__title {
+    font-size: 1em;
+    padding-left: 1.5em;
+  }
+  & >.weui-cells {
+    background: #f0f3f7;
+  }
+}
+.infoTarget {
+  .weui-cells__title {
+    font-size: 1em;
+    padding-left: 1.5em;
+  }
+
+}
+.desc {
+  .vux-no-group-title {
+    width:100% !important;
+  }
+}
+
+.statis .weui-cells__title {
+  padding-left: 2em;
+  font-size: 1em;
+  position: relative;
+}
+//.weui-cells__title::before {
+//  conten: '';
+//  position: absolute;
+//  width: 10px;
+//  height:10px;
+//  background-color: #f00;
+//}
+.statis .weui-cells__title:before {
+  content: '';
+  position: absolute;
+  background-color: #4e8cff;
+  width: 5px;
+  height: 15px;
+  top: 3px;
+  left: 15px;
+}
+// echarts查询页面
+.search {
+  position: relative;
+  .weui-cell_access .weui-cell__ft:after {
+    display: none;
+  }
+  .vux-datetime {
+    width: 75%;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 5px;
+    display: inline-block;
+    > div:nth-child(1) {
+      width: 35%;
+      display: inline-block;
+    }
+    > div:nth-child(2) {
+      display: inline-block;
+    }
+  }
+  .weui-btn.weui-btn_primary {
+    position: absolute;
+    width: 20%;
+    line-height: 2;
+    top: 5px;
+    right: 5px;
+    &:after {
+      border: none;
+    }
+  }
+}
+.weui-cells .contain {
+  div {
+    font-size: 14px;
+  }
+}
+// 转办督办弹窗
+.selectActive .weui-cells_checkbox {
+  display: flex;
+  .weui-check_label {
+    flex: 1;
+    &:before {
+      display: none;
+    }
+  }
+}
+.codeType .vux-cell-primary {
+  width: 11em;
+}
+// app.vue 弹窗初始
+.popConfirm .weui-btn + .weui-btn {
+  margin-top: 0;
+}
+.weui-btn.weui-btn_default.enter {
+  color: #fff;
+  background: #16be73
+}
+
+.weui-btn.weui-btn_default.cancel {
+  color: #454545;
+  background: #F7F7F7
+}
+// weui-btn
+button.weui-btn {
+  height:40px;
+}
+//重写信息详情里面的tab
+.instruction {
+  .weui-cells {
+    margin-top: 0;
+    overflow: initial;
+  }
+  .vux-tab {
+    & > div {
+      border-right: 1px solid #ddd !important;
+    }
+    & > div:nth-child(4) {
+      border-right:0 !important;
+    }
+  }
+  //  title
+  .weui-cells__title {
+    position: relative;
+    background: #fff;
+    margin: 0;
+    padding: 0.5em 0.5em;
+    font-size: 14px;
+    color: #333;
+    padding-left: 30px;
+    line-height: 24px;
+  }
+  .checkBox {
+    .weui-cells__title {
+      line-height: 0;
+    }
+  }
+}
+//list
+.report-info-col {
+  .weui-cell__ft {
+    width: 100%;
+  }
+}
+//panel
+.weui-panel {
+  margin-top: 0;
+}
+// 信息分享
+.infoShell .weui-cells__title:before,
+.infoSend .weui-cells__title:before {
+  content: '';
+  position: absolute;
+  display: inline-block;
+  width: 5px;
+  height: 16px;
+  background-color: #4e8cff;
+  left: 20px;
+  top: 7px;
+}
+.infoShell .weui-cells__title:before {
+  top: 3px;
+}
+// 领导批示转办
+.infoSend .weui-cells__title:before {
+  top: 5px;
+}
+.user-select-panel .weui-cells__title {
+  padding-left: 30px;
+  position: relative;
+  &:before {
+    content: '';
+    width: 5px;
+    height: 15px;
+    background-color: #4e8cff;
+    position: absolute;
+    top: 4px;
+    left: 17px;
+  }
+}
+.selectLead {
+  .weui-cells__title:before {
+    top: 14px;
+  }
+}
+// 新增页事件类�?
+.thingType {
+  .vux-cell-primary {
+    flex: inherit;
+  }
+}
+#multiForm {
+  .weui-cells__title {
+    position: relative;
+    padding-left: 25px;
+    &:before {
+      position: absolute;
+      content: '';
+      width: 5px;
+      height: 15px;
+      background-color: #4e8cff;
+      left: 15px;
+      top: 4px;
+    }
+  }
+}
+// 领导选择
+
+// 个人信息
+.userchange{
+  .weui-cells__title {
+    &:before {
+      content: '';
+      position: absolute;
+      width: 5px;
+      height: 18px;
+      background-color: #4e8cff;
+      left: 18px;
+      top: 5px
+    }
+  }
+  .longininfo{
+    .weui-cells__title{
+      font-size: 1em;
+      padding-left: 2em;
+    }
+  }
+  .userinfo{
+    .weui-cells__title{
+      font-size: 1em;
+      padding-left: 2em;
+    }
+  }
+  .commonUser{
+    .weui-cells__title{
+      font-size: 1em;
+      padding-left: 2em;
+    }
+  }
+}
+// 注册
+.register {
+  .weui-cells__title {
+    &:before {
+      content: '';
+      position: absolute;
+      width: 5px;
+      height: 18px;
+      background-color: #4e8cff;
+      left: 18px;
+      top: 5px
+    }
+  }
+  .eventPhone {
+    .vux-cell-primary {
+      flex: none;
+    }
+    .weui-cell__ft {
+      text-overflow: ellipsis;
+      overflow: hidden;
+      white-space: nowrap;
+    }
+    .weui-cell__ft {
+      //color: #000;
+      //padding-left: 17px;
+      //width: 80%;
+      text-align: left;
+      color: #000;
+      padding-left: 17px;
+      width: 80%;
+    }
+  }
+}
+//  高亮
+.hightLight {
+  color: blue;
+}
+// unitName
+.unitName {
+  .vux-cell-primary {
+    flex: inherit;
+  }
+  .weui-cell_access .weui-cell__ft {
+    padding-left: 28px;
+    &:after {
+      display: none;
+      right: -35px;
+    }
+  }
+}
+// 编辑
+.ma-round {
+  .vux-popup-picker-select {
+    //margin-left: 18px;
+  }
+  .weui-cell__ft {
+    padding-left: 16px;
+  }
+}
+// 转办督办页面
+.transInfo {
+  .weui-cells__title {
+    padding: 0 25px;
+    font-size: 14px;
+    position: relative;
+    &:before {
+      content: '';
+      position: absolute;
+      width: 5px;
+      height: 15px;
+      background-color: #4e8cff;
+      top: 4px;
+      left: 15px;
+    }
+  }
+}
+// 表单样式
+.add-round {
+  .thingAddress {
+    .weui-cell__ft {
+      flex: 1;
+      line-height: 24px;
+    }
+  }
+  .thingLevel .weui-label {
+    width: auto !important;
+  }
+  .reportTime {
+    .weui-label {
+      width: 5.4em !important;
+    }
+  }
+  .ma-bottom {
+
+    .weui-input {
+      color: #999;
+      font-size: 14px;
+      font-weight: 400;
+      font-family: 'Microsoft YaHei';
+    }
+    .vux-cell-primary {
+      flex: none;
+      width: 4.5em;
+    }
+    .vux-popup-picker-select {
+      text-align: left !important;
+    }
+    .weui-cell::after {
+      content:'';
+      position: absolute;
+
+    }
+    .weui-cell__ft {
+      text-align: left;
+      color: #999999;
+      padding: 0 15px;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      white-space: nowrap;
+    }
+    .vux-datetime .vux-datetime-value {
+      padding-left: 0;
+      flex: 1;
+    }
+    .weui-cells {
+      overflow: initial;
+      position: relative;
+    }
+  }
+  input::-webkit-input-placeholder {
+    font-size: 14px;
+  }
+  input:-moz-placeholder {
+    font-size: 14px;
+  }
+  input::-moz-placeholder {
+    font-size: 14px;
+  }
+  input:-ms-input-placeholder {
+    font-size: 14px;
+  }
+  .vux-popup-picker-select {
+    //padding-left: 20px;
+  }
+  .vux-popup-picker-select-box {
+    padding-left: 20px;
+  }
+  .ma-bottom .vux-datetime .vux-datetime-value {
+    padding-left: 20px;
+  }
+  .positionBtn {
+    position: fixed;
+    bottom: 0;
+    width: 95%;
+    background: #ededed;
+    padding: 5px 10px;
+    z-index: 99;
+    button {
+      width: 49%;
+      display: inline;
+      font-size: 16px;
+    }
+    .weui-btn + .weui-btn {
+      margin-top: 0;
+    }
+  }
+}
+.edit-round, .add-round {
+  .positionBtn {
+    position: fixed;
+    bottom: 0;
+    width: 95%;
+    background: #ededed;
+    padding: 5px 10px;
+    z-index: 99;
+    button {
+      width: 49%;
+      display: inline;
+    }
+    .weui-btn + .weui-btn {
+      margin-top: 0;
+    }
+  }
+}
+.edit-round { // 下级编辑页面重写表单样式
+  .local {
+    .weui-cell__ft {
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      text-align: left;
+    }
+  }
+  .vux-cell-bd {
+    flex: none;
+  }
+  .weui-label {
+    width: 5em !important;
+  }
+  .vux-popup-picker-select {
+    text-align: left !important;
+    padding-left: 5px;
+  }
+  .weui-cell_access .weui-cell__ft {
+    text-align: left !important;
+  }
+  .time-select{
+    .vux-cell-primary{
+      flex:none;
+    }
+  }
+}
+.chief-round { // 上级编辑页面重写表单样式
+  .vux-label, .weui-label {
+    width: 5em !important;
+  }
+  .vux-datetime p {
+    width: 5em;
+  }
+  .vux-popup-picker-select-box {
+    flex: 1;
+    text-align: left;
+  }
+  .weui-cell__ft {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    text-align: left;
+  }
+  .vux-popup-picker-select {
+    text-align: left !important;
+  }
+  .local {
+    .vux-cell-bd {
+      flex: none;
+    }
+  }
+  .time-select{
+    .vux-cell-primary{
+      flex:none;
+    }
+  }
+}
+.warn-round {
+  .thingLevel .weui-label {
+    width: auto !important;
+  }
+  .vux-popup-picker-select {
+    padding-left: 20px;
+    text-align: left !important;
+  }
+  .ma-bottom .vux-datetime .vux-datetime-value{
+    padding-left: 20px;
+    text-align: left;
+  }
+}
+//自定义时间轴
+.vux-timeline {
+  .vux-timeline-item:nth-child(1) .vux-timeline-item-color {
+    background: #4e8cff;
+    position: relative;
+    width: 16px;
+    height: 16px;
+    left: -2px;
+    z-index: 99;
+  }
+  .vux-timeline-item-color {
+    background-color: #e2e2e2;
+  }
+  .vux-timeline-item-tail {
+    background-color: #e2e2e2;
+  }
+}
+.vux-timeline-item-content {
+  padding: 0 0 10px 20px !important;
+}
+// 单位层级
+.unitPop {
+  .vux-popup-dialog {
+    z-index: 700 !important;
+  }
+}
+@popup-picker-header-text-color: @themeColor;
+// 重置weui-cells 字体
+.weui-cells {
+  font-size: 14px !important;
+}
+.weui-btn {
+  font-size: 14px;
+}
+// checkcell样式确定的
+.weui-check {
+  position: absolute;
+  left: -9999em;
+}
+.weui-cells_checkbox .weui-icon-checked:before {
+  content: '\EA01';
+  color: #C9C9C9;
+  font-size: 23px;
+  display: block;
+}
+// 办结
+.concludeBtn {
+  .weui-cells {
+    background: transparent;
+    &:before {
+      border: none;
+    }
+  }
+}
+// 领导转办
+.transBtn {
+  .weui-cells {
+    background: transparent;
+    &:before {
+      border: none;
+    }
+  }
+}
+// 通讯录搜索
+.communicateSearch {
+  .header {
+    .vux-header {
+      padding: 2px;
+      background-color: #EFEFF4 !important;
+    }
+  }
+  .vux-header .vux-header-title {
+    margin: 0px 10px;
+  }
+  .selectHeader {
+    width: 100%;
+    overflow: hidden;
+    > input {
+      width: calc(~"100% - 40px");
+      height: 30px;
+      border: 0;
+      padding: 10px;
+      float: left;
+      border-radius: 5px;
+      margin-top: 6px;
+      background: #fff;
+      outline: none;
+    }
+    button {
+      float: right;
+      background: transparent;
+      color: @btnThemeColor;
+      font-size: 28px;
+      border: 0;
+      margin-top: 6px;
+      outline: none;
+    }
+  }
+  .vux-header .vux-header-left .left-arrow:before {
+    border-color: #16be73 !important;
+  }
+}
+.detail-info-part {
+  .vux-cell-primary {
+    flex: none;
+  }
+}
+// 领导批示弹窗
+.leadSelect {
+  position: fixed;
+  width: 94%;
+  bottom: 0;
+  .weui-cells {
+    background-color: transparent;
+  }
+}
+// 视频插件
+.video-js .vjs-big-play-button {
+  position: absolute !important;
+  top: 50% !important;
+  left: 50% !important;
+  transform: translateX(-50%) translateY(-50%) !important;
+}
+.video-js {
+  width: 100% !important;
+  height: 100% !important;
+}

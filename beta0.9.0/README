@@ -1,0 +1,31 @@
+--build           #webpack配置文件
+--config          #项目启动配置文件
+--node_modules    #node依赖包
+--src             #项目源码
+  --asset         #静态资源目录
+  --components    #vue组件目录 包含主业务模块页面和公共组件
+    --gsafetycompinents    #自定义包含业务的组件
+    --inforeport      #信息接报模块页面
+    --mycomponents    #自定义结构组件
+    --push            #信息推送模块页面
+    --register        #注册模块页面
+    --user            #用户信息操作模块页面
+  --config            #配置文件，包含各项全局配置信息
+  --datas         #前端url配置等json数据
+  --fonts         #字体文件
+  --i18resource   #国际化相关文件  已测试还未使用到项目中  后期可以转移
+  --router        #页面路由文件
+  --service       #从后台获取数据的API
+  --store         #vuex相关文件，页面全局状态对象管理
+  --styles        #样式文件
+  	--theme       #主题风格文件
+  --utils         #工具方法目录
+  --main.js		  #单页面js入口
+--static          #其他静态资源
+
+
+
+
+将一些平时用到的钩子函数以及其他相关页面vue用法写在home.vue中并写上注释以供参考
+
+

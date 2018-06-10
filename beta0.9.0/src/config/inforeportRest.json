@@ -1,0 +1,27 @@
+{
+  "BASEDATA": {
+    "USER": "/basedata/orguser/findByCode",
+    "DATAUSER" : "/basedata/user/getUser",
+    "SAVEUSER" : "/basedata/orguser/save",
+    "GETORGS" : "/basedata/org/findAllOrderByOrgCodeAsc"
+  },
+  "EventInfo": {
+    "LIST": "/eventInfo/list/search/all",
+    "ADD": "/eventInfo/save",
+    "VIEW": "/eventInfo/showInfo",
+    "SENDCHECK": "/eventInfo/propose",
+    "REPORT": "/eventdispose/report",
+    "CHECKLIST": "/eventInfo/findAllInfoApply",
+    "CHECKVIEW": "/eventInfo/showApply",
+    "CHECK": "/eventdispose/check",
+    "FINISH" : "/eventInfo/finish"
+  },
+  "INSTRUCT": {
+    "SAVE": "/eventdispose/instruct",
+    "VIEW": "/eventInfo/opinion/get-opinion-by-event-id",
+    "LIST": "/eventdispose/instruct/list",
+    "LISTINSTR" : "/eventdispose/assign/list",
+    "FEEDBACKLIST" : "/eventInfo/findOpinionInstructionFb",
+    "ADDFEEDBACK" : "/eventInfo/saveOpinionInstructionFb"
+  }
+}

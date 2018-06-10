@@ -1,0 +1,29 @@
+{
+  "INDEX" : {
+    "REPORT" : "#/report",
+    "INSTRUCT" : "#/instruct",
+    "CHECK" : "#/check",
+    "DEAL" : "#/deal"
+  },
+  "REPORT" : {
+    "INFOVIEW" : "#/report/infoview",
+    "CHECKVIEW" : "#/report/checkview",
+    "REPORTVIEW" : "#/report/reportview",
+    "INFOSUPERVIEW" : "#/report/infosuperview",
+    "CHECKSUPERVIEW" : "#/report/checksuperview",
+    "REPORTSUPERVIEW" : "#/report/reportsuperview",
+    "sendCheck" : "#/report/check/send",
+    "sendReport" : "#/report/check/report",
+    "sendFeedback" : "#/report/check/feedback",
+    "addReport" : "#/report/add",
+    "addWaringInfo" : "#/report/addWaringInfo",
+    "addOtherInfo" : "#/report/addOtherInfo"
+  },
+  "INSTRUCT" : {
+    "VIEW" : "#/instruct/view",
+    "LIST" : "#/instruct/list"
+  },
+  "DEAL" : {
+  	"VIEW" : "#/deal/view"
+  }
+}

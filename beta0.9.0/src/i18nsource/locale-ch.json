@@ -1,0 +1,12 @@
+{
+	"message.title": "很赞的标题",
+	"message.body": "很漂亮的文字内容",
+	"message": {
+		"footer": "页面底部文字"
+	},
+	"listing": [
+		"这是第 {first}块",
+		"这是第 {second}块"
+	]
+}
+

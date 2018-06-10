@@ -1,0 +1,185 @@
+// 组件里面公共的样式写在这里
+// 信息详情处置过程
+.transList {
+  h3 {
+    font-size: 14px;
+    .gs-vcard-o {
+      margin-right: 10px;
+      font-weight: 100;
+      color: #333;
+    }
+  }
+  .gs-person2:before {
+    position: absolute;
+    z-index: 9;
+    font-size: 15px;
+    color: #333;
+    top: 12px;
+    left: 12px;
+  }
+  .gs-drivers-license-o:before {
+    position: absolute;
+    z-index: 9;
+    font-size: 15px;
+    color: #333;
+    top: 12px;
+    left: 12px;
+  }
+  .gs-credit-card:before {
+    position: absolute;
+    z-index: 9;
+    font-size: 15px;
+    color: #333;
+    top: 12px;
+    left: 12px;
+  }
+  .gs-tune:before {
+    position: absolute;
+    z-index: 9;
+    font-size: 15px;
+    color: #333;
+    top: 12px;
+    left: 12px;
+  }
+  .icon {
+    position: absolute;
+    right: 15px;
+    font-size: 30px;
+    top: -35px;
+    color: #333;
+    width: 45%;
+    text-align: right;
+  }
+  .deal {
+    position: relative;
+    border-top: 1px solid #e2e2e2;
+    border-bottom: 1px solid #e2e2e2;
+    margin-bottom: 5px;
+  }
+}
+
+// 信息列表的标题’
+
+.document-title{
+  text-align: left;
+  color: #000;
+  font-size: 16px;
+  div {
+    width: 100%;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+}
+
+.icon-done .document-title {
+  color: #999;
+}
+.cell-icon{
+  border-radius: 5px;
+  font-size: 12px;
+  color: #fff;
+  padding: 2px 6px;
+}
+.icon-done .cell-icon{
+  opacity: 0.6;
+}
+.cell-icon.unread:after{
+  content: '';
+  display: block;
+  width: 8px;
+  height: 8px;
+  background: #d43e2f;
+  border-radius: 5px;
+  position: absolute;
+  left: 5px;
+  top: 5px;
+}
+
+.cell-icon.red{
+  background:  #f15a4a;
+}
+
+.cell-icon.yellow{
+  background:  #fdc400;
+}
+
+.cell-icon.orange{
+  background:  #ff890a;
+}
+
+.cell-icon.blue{
+  background:  #138ce9;
+}
+.infoSend .weui-cells {
+  margin: 10px 15px 0 15px;
+  .weui-cell__ft {
+    color: #000;
+    font-size: 14px;
+  }
+}
+.instruction  .transNew {
+  .weui-cells__title {
+    padding-left: 15px;
+    font-size: 14px;
+    color: #000;
+  }
+}
+.unit {
+  margin-top: 0;
+  > .weui-cells {
+    margin-top: 0;
+  }
+}
+.readonly .weui-cell__primary{
+  color: #999;
+}
+// 通知公告接受单位
+.announUnit {
+  .vux-popup-dialog .weui-cell_access {
+    position: relative;
+    margin-bottom: 5px;
+    border-radius: 5px;
+  }
+  .weui-cells {
+    margin-top: -2px;
+  }
+  .weui-cell_access .weui-cell__ft {
+    padding-right: 13px;
+    position: initial;
+  }
+  .weui-cell_access .weui-cell__ft:after {
+    content: " ";
+    display: inline-block;
+    height: 6px;
+    width: 6px;
+    border-width: 2px 2px 0 0;
+    border-color: #C8C8CD;
+    border-style: solid;
+    -webkit-transform: matrix(0.71, 0.71, -0.71, 0.71, 0, 0);
+    transform: matrix(0.71, 0.71, -0.71, 0.71, 0, 0);
+    position: absolute;
+    top: 50%;
+    margin-top: -4px;
+    right: 20px;
+  }
+}
+
+// 通讯录搜索框
+.historyOption{
+  padding-bottom: 10px;
+}
+.historyOption a{
+  display: inline-block;
+  margin-top: 10px;
+  margin-left: 10px;
+  padding: 6px 15px;
+  border-radius: 20px;
+  background: #e0e0e0;
+  color: #333333;
+  font-weight: 600;
+  max-width: 120px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

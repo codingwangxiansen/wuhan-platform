@@ -1,0 +1,43 @@
+{
+  "URL_OAUTH":"/weixin/wxOauth",
+  "URL_CONFIG":"/weixin/config_options",
+  "COMMUNICATE_URL":{
+    "GROUP_URL":"/geminihtml/module/communicate.html#/CommunicateGroup"
+  },
+  "EVENT_RESOURCE" : {
+    "ROOT" : "/module/event.html#/",
+  	"NOTICE" : "/notice",
+  	"TASK" : "/tasks"
+  },
+  "MAP_RESOURCE" : {
+    "ROOT" : "/geminigis/map.html#/"
+  },
+  "EVENT_REST" : {
+    "NOTICE" : "/eventmobile"
+  },
+  "COMMUNICATE" : {
+    "LOAD" : "/app/communicate/vueinit"
+  },
+  "ORG" : {
+    "LOAD" : "/app/communicate/vueinit"
+  },
+  "WEBGIS" : {
+  	"ROOT" : "http://171.34.169.249:8100/NCWEBGIS",
+  	"AROUND" : "/mis/aroundlocation.html"
+  },
+  "EBOOK" : {
+  	"EBOOK_ACTIVITY" : "",
+  	"EBOOK_VIEW_ACTIVITY" : ""
+  },
+  "ResAsylumareaPt" : {
+    "query" : "/resasylumareapt/query"
+  },
+  "Communicate":{
+    "findEmergencyOrg":"/api/m/basedata/org/findEmergencyOrg/v2",
+    "findWorOrg":"/api/m/basedata/wor/findWorOrg/v2",
+    "viewWorUser":"/api/m/basedata/woruser/viewOrgUser/v2",
+    "ORG_USER_URL":"/index.html#/communicate/CommunicateOrgUser/",
+    "ORG_URL":"/index.html#/communicate/CommunicateOrg/",
+    "QUERY_ALL_URL":"/index.html#/CommunicateQueryAll"
+  }
+}
